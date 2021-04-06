@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta   charset="UTF-8">
-    <title>Welcome</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block title %} Welcome {% endblock %}
+{% block content %}
     <h1>Welcome to meeting planner</h1>
     <p>
         This is the application
@@ -22,5 +18,4 @@
         {% endfor %}
     </ul>
     <a href="{% url 'rooms' %}">Rooms list</a>
-</body>
-</html>
+{% endblock %}
